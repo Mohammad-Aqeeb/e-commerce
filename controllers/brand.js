@@ -27,7 +27,7 @@ async function getBrands(req,res){
         res.status(200).json({
             success : true,
             data : data,
-            message : "Brand fetched successfuly"
+            message : "Brands fetched successfuly"
         })
     }
     catch(error){
