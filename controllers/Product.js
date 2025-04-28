@@ -30,7 +30,7 @@ async function getProduct(req, res){
         if(!data || data.lenght==0){
             return res.status(404).json({
                 success : false,
-                message : "No Product found"
+                message : "Product not found"
             })
         }
 
