@@ -53,8 +53,8 @@ async function deleteCategory(req,res){
         console.error(error)
 ;        res.status(500).json({
             success : false,
+            message : "Internal server error",
             error : error.message,
-            message : "Internal server error"
         })
     }
 }
