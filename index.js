@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json())
 
-app.use("/v1", route);
+app.use("/api/v1", route);
 
 dbconnect();
 
