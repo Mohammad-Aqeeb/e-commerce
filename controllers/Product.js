@@ -56,7 +56,7 @@ async function deleteProduct(req, res){
         if(!id){
             return res.status(404).json({
                success : false,
-               message : "product not found"
+               message : "product not exist"
            })
        }
 
