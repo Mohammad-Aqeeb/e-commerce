@@ -9,7 +9,7 @@ async function addProduct(req, res){
         res.status(200).json({
             success : true,
             data : data,
-            message : "Product addded successfully"
+            message : "Product addded succesfully"
         })
     }
 
@@ -17,8 +17,8 @@ async function addProduct(req, res){
         console.error(error);
         res.status(500).json({
             success : false,
-            message : "Internal server error",
             error : error.message,
+            message : "Internal server error",
         })
     }
 }
