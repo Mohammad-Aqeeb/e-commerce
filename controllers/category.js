@@ -34,7 +34,7 @@ async function getCategory(req,res){
         res.status(500).json({
             success : false,
             error : error.message,
-            message : "Internal server error"
+            message : "Internal server error",
         })
     }
 }
