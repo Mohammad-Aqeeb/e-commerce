@@ -6,6 +6,7 @@ const { createBrand, getBrands, deleteBrand } = require("../controllers/brand");
 const { createCategory, getCategory, deleteCategory } = require("../controllers/category");
 const { createUser, getUsers, deleteUser } = require("../controllers/user");
 const { addProductToCart, deleteProductFromCart } = require("../controllers/cart");
+const { getProductByBrand, getProductByCategory } = require("../controllers/filter");
 
 router.post("/createProduct", createProduct);
 router.get("/getProduct", getProduct);
@@ -27,5 +28,8 @@ router.delete("/deleteUser", deleteUser);
 
 router.post("/addProductToCart", addProductToCart);
 router.delete("/deleteProductFromCart", deleteProductFromCart);
+
+router.get("/getProductByBrand", getProductByBrand);
+router.get("/getProductByCategory", getProductByCategory);
 
 module.exports = router;
