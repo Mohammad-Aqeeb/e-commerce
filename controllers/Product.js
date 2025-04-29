@@ -1,6 +1,6 @@
 const product = require("../models/product");
 
-async function addProduct(req, res){
+async function createProduct(req, res){
     try{
         const {productName, price, categoryId, brandId} = req.body;
 
@@ -106,7 +106,7 @@ async function updateProduct(req, res){
 }
 
 module.exports = {
-    addProduct,
+    createProduct,
     getProduct,
     deleteProduct,
     updateProduct,
