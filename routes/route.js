@@ -24,7 +24,6 @@ router.delete("/deleteCategory", deleteCategory);
 router.post("/createUser", createUser);
 router.get("/getUsers", getUsers);
 router.delete("/deleteUser", deleteUser);
-// router.put("/updateUser", updateUser);
 
 router.post("/addProductToCart", addProductToCart);
 router.delete("/deleteProductFromCart", deleteProductFromCart);
