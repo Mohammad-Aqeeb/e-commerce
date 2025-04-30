@@ -83,7 +83,30 @@ async function deleteProductFromCart(req, res){
     }
 }
 
+async function getCartItem(req,res){
+    try{
+        const userId = req.body.userId;
+
+        const data = await Cart.find({UserId : userId}).populate("ProductId").exec()
+
+        res.status(200).json({
+            success : true,
+            data : data,
+            message : "Cart Item fetched succefully"
+        })
+    }
+    catch(error){
+        console.log(error);
+        res.status(500).json({
+            success : false,
+            error : error.message,
+            message : "Error fetching product from cart"
+        })
+    }
+}
+
 module.exports = {
     addProductToCart,
-    deleteProductFromCart
+    deleteProductFromCart,
+    getCartItem
 };
