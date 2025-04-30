@@ -11,6 +11,16 @@ const productSchema = mongoose.Schema({
         required : true
     },
 
+    description : {
+        type : String,
+        required : true,
+    },
+
+    image : {
+        type : String,
+        required : true
+    },
+
     category : {
         type : mongoose.Schema.Types.ObjectId,
         ref : "categories"
@@ -20,6 +30,7 @@ const productSchema = mongoose.Schema({
         type : mongoose.Schema.Types.ObjectId,
         ref : "brands"
     }
+
 })
 
 module.exports = mongoose.model("products", productSchema);
