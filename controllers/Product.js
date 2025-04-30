@@ -1,10 +1,19 @@
-const product = require("../models/product");
+const product = require("../models/product")
+const cloudinary = require("cloudinary")
 
 async function createProduct(req, res){
     try{
-        const {productName, price, categoryId, brandId} = req.body;
+        const {productName, price, description, category, brand} = req.body;
+        const image = req.files.image;
 
-        const data = await product.create({productName, price, categoryId, brandId});
+        console.log(image);
+        
+        const folder = "Home/images";
+        const {options} = {folder};
+        const response = await cloudinary.uploader.upload(image.tempFilePath, options);
+
+        console.log( response.secure_url);
+        const data = await product.create({productName, price, category, brand, description, image : response.secure_url});
         
         res.status(200).json({
             success : true,
