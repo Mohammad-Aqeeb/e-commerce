@@ -2,9 +2,9 @@ const User = require("../models/user");
 
 async function createUser(req, res){
     try{
-        const {userName, email, password, role} = req.body;
+        const {userName, email, password} = req.body;
 
-        if(!userName || !email || !password || !role){
+        if(!userName || !email || !password){
             return res.status(500).json({
                 success : false,
                 message : "Fill the details correctly"
@@ -21,7 +21,7 @@ async function createUser(req, res){
             })
         }
 
-        const data = await User.create({userName, email, password, role});
+        const data = await User.create({userName, email, password, role : "User"});
 
         res.status(200).json({
             success : true,
@@ -97,6 +97,49 @@ async function deleteUser(req, res){
     }
 }
 
+async function loginUser(req, res){
+    try{
+        const {email, password} = req.body;
+
+        if(!email && !password){
+            return res.status(500).json({
+                success : false,
+                message : "Please fill the details"
+            })
+        }
+
+        const data = await User.find({email});
+
+        if(!data){
+            return res.status(500).json({
+                success : false,
+                message : "User not found"
+            })
+        }
+
+        if(data.password !== password){
+            return res.status(500).json({
+                success : false,
+                message : "Password Incorrect"
+            })
+        }
+
+        res.status(200).json({
+            success : true,
+            data : data,
+            message : "User login successfully"
+        })
+    }
+    catch(error){
+        console.log(error);
+        res.status(500).json({
+            success : false,
+            error : error.message,
+            message : "Error while login"
+        })
+    }
+}
+
 
 // async function updateUser(req, res){
 //     try{
@@ -122,6 +165,7 @@ async function deleteUser(req, res){
 
 module.exports = {
     createUser,
+    loginUser,
     getUsers,
     deleteUser,
     // updateUser,
