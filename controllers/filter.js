@@ -2,7 +2,10 @@ const product = require("../models/product");
 
 async function getProductByBrand(req, res){
     try{
+        console.log(req.body);
+        console.log("Sssss")
         const brandId = req.body.brandId;
+        console.log(brandId);
 
         if(!brandId){
             res.status(500).json({
@@ -11,7 +14,7 @@ async function getProductByBrand(req, res){
             })
         }
 
-        const data = await product.find({brand : brandId}).populate(["brand","category"]).exec();
+        const data = await product.find({brand :{ $in : brandId}}).populate(["brand","category"]).exec();
 
         res.status(200).json({
             success : true,
