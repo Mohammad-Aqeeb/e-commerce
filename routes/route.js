@@ -4,7 +4,7 @@ const router = express.Router();
 const { createProduct, getProduct, deleteProduct, updateProduct,} = require("../controllers/Product");
 const { createBrand, getBrands, deleteBrand } = require("../controllers/brand");
 const { createCategory, getCategory, deleteCategory } = require("../controllers/category");
-const { createUser, getUsers, deleteUser } = require("../controllers/user");
+const { createUser, getUsers, deleteUser, loginUser } = require("../controllers/user");
 const { addProductToCart, deleteProductFromCart, getCartItem } = require("../controllers/cart");
 const { getProductByBrand, getProductByCategory } = require("../controllers/filter");
 
@@ -24,12 +24,13 @@ router.delete("/deleteCategory", deleteCategory);
 router.post("/createUser", createUser);
 router.get("/getUsers", getUsers);
 router.delete("/deleteUser", deleteUser);
+router.post("/loginUser", loginUser);
 
 router.post("/addProductToCart", addProductToCart);
 router.delete("/deleteProductFromCart", deleteProductFromCart);
 
-router.get("/getProductByBrand", getProductByBrand);
-router.get("/getProductByCategory", getProductByCategory);
+router.post("/getProductByBrand", getProductByBrand);
+router.post("/getProductByCategory", getProductByCategory);
 router.get("/getCartItem", getCartItem)
 
 module.exports = router;
