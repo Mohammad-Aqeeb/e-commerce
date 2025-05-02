@@ -2,10 +2,7 @@ const product = require("../models/product");
 
 async function getProductByBrand(req, res){
     try{
-        console.log(req.body);
-        console.log("Sssss")
         const brandId = req.body.brandId;
-        console.log(brandId);
 
         if(!brandId){
             res.status(500).json({
