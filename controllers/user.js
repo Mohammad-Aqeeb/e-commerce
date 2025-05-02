@@ -108,7 +108,7 @@ async function loginUser(req, res){
             })
         }
 
-        const data = await User.find({email});
+        const data = await User.findOne({email});
 
         if(!data){
             return res.status(500).json({
@@ -116,6 +116,7 @@ async function loginUser(req, res){
                 message : "User not found"
             })
         }
+        console.log(data);
 
         if(data.password !== password){
             return res.status(500).json({
