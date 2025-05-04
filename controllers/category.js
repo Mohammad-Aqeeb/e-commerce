@@ -1,3 +1,4 @@
+const logger = require("../config/logger");
 const category = require("../models/category");
 
 async function createCategory(req,res){
@@ -5,6 +6,8 @@ async function createCategory(req,res){
         const categoryName = req.body.categoryName;
         const data = await category.create({categoryName});
 
+
+        logger.info("category added successfuly")
         res.status(200).json({
             success : true,
             data : data,
@@ -12,6 +15,7 @@ async function createCategory(req,res){
         })
     }
     catch(error){
+        logger.error(error);
         res.status(500).json({
             success : false,
             error : error.message,
@@ -24,6 +28,7 @@ async function getCategory(req,res){
     try{
         const data = await category.find({});
 
+        logger.info("category fetched successfuly")
         res.status(200).json({
             success : true,
             data : data,
@@ -31,6 +36,7 @@ async function getCategory(req,res){
         })
     }
     catch(error){
+        logger.error(error);
         res.status(500).json({
             success : false,
             error : error.message,
@@ -44,13 +50,15 @@ async function deleteCategory(req,res){
         const categoryId = req.body.categoryId;
         await category.findByIdAndDelete(categoryId);
 
+
+        logger.info("category deleted successfuly")
         res.status(200).json({
             success : true,
             message : "category deleted successfuly"
         })
     }
     catch(error){
-        console.error(error)
+        logger.error(error);
 ;        res.status(500).json({
             success : false,
             message : "Internal server error",
