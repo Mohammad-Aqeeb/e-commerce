@@ -1,3 +1,4 @@
+const logger = require("../config/logger");
 const User = require("../models/user");
 
 async function createUser(req, res){
@@ -5,6 +6,7 @@ async function createUser(req, res){
         const {userName, email, password} = req.body;
 
         if(!userName || !email || !password){
+            logger.warn("Fill the details correctly")
             return res.status(500).json({
                 success : false,
                 message : "Fill the details correctly"
@@ -15,6 +17,7 @@ async function createUser(req, res){
         console.log(existingData);
 
         if(existingData){
+            logger.warn("User already exisits")
             return res.status(500).json({
                 success : false,
                 message : "User already exisits"
@@ -23,6 +26,7 @@ async function createUser(req, res){
 
         const data = await User.create({userName, email, password, role : "User"});
 
+        logger.info("User created")
         res.status(200).json({
             success : true,
             data : data,
@@ -31,7 +35,7 @@ async function createUser(req, res){
     }
 
     catch(error){
-        console.error(error);
+        logger.error(error);
         res.status(500).json({
             success : false,
             error : error.message,
@@ -45,12 +49,14 @@ async function getUsers(req, res){
         const data = await User.find({});
 
         if(!data){
+            logger.warn("No user found")
             return res.status(404).json({
                 success : false,
                 message : "No user found"
             })
         }
         
+        logger.info("User fetched successfuly")
         res.status(200).json({
             success : true,
             data : data,
@@ -59,7 +65,7 @@ async function getUsers(req, res){
 
     }
     catch(error){
-        console.error(error)
+        logger.error(error)
         res.status(500).json({
             success : false,
             message : error.message,
@@ -73,6 +79,7 @@ async function deleteUser(req, res){
         const id = req.body.userId;
 
         if(!id){
+            logger.warn("Please provide valid user id")
             return res.status(500).json({
                 success : false,
                 message : "Please provide valid user id"
@@ -81,6 +88,7 @@ async function deleteUser(req, res){
 
         await User.findByIdAndDelete(id);
 
+        logger.info("User deleted successfuly")
         res.status(200).json({
             success : true,
             message : "User deleted successfuly"
@@ -88,7 +96,7 @@ async function deleteUser(req, res){
 
     }
     catch(error){
-        console.error(error);
+        logger.error(error);
         res.status(500).json({
             success : false,
             message : "Internal server error",
@@ -102,6 +110,7 @@ async function loginUser(req, res){
         const {email, password} = req.body;
 
         if(!email && !password){
+            logger.warn("Please fill the details")
             return res.status(500).json({
                 success : false,
                 message : "Please fill the details"
@@ -111,20 +120,22 @@ async function loginUser(req, res){
         const data = await User.findOne({email});
 
         if(!data){
+            logger.warn("User not found")
             return res.status(500).json({
                 success : false,
                 message : "User not found"
             })
         }
-        console.log(data);
 
         if(data.password !== password){
+            logger.warn("Password Incorrect")
             return res.status(500).json({
                 success : false,
                 message : "Password Incorrect"
             })
         }
 
+        logger.info("User login successfully")
         res.status(200).json({
             success : true,
             data : data,
@@ -132,7 +143,7 @@ async function loginUser(req, res){
         })
     }
     catch(error){
-        console.log(error);
+        logger.error(error);
         res.status(500).json({
             success : false,
             error : error.message,
