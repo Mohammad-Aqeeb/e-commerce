@@ -1,3 +1,4 @@
+const logger = require("../config/logger");
 const product = require("../models/product")
 const cloudinary = require("cloudinary")
 
@@ -15,6 +16,7 @@ async function createProduct(req, res){
         console.log( response.secure_url);
         const data = await product.create({productName, price, category, brand, description, image : response.secure_url});
         
+        logger.info("Product addded succesfully")
         res.status(200).json({
             success : true,
             data : data,
@@ -23,7 +25,7 @@ async function createProduct(req, res){
     }
 
     catch(error){
-        console.error(error);
+        logger.error(error);
         res.status(500).json({
             success : false,
             error : error.message,
@@ -37,12 +39,14 @@ async function getProduct(req, res){
         const data = await product.find({}).populate(["category", "brand"]).exec();
 
         if(!data || data.lenght==0){
+            logger.warn("Product not found")
             return res.status(404).json({
                 success : false,
                 message : "Product not found"
             })
         }
 
+        logger.info("product fetched successfully");
         res.status(200).json({
             success : true,
             data : data,
@@ -50,7 +54,7 @@ async function getProduct(req, res){
         })
     }
     catch(error){
-        console.error(error)
+        logger.error(error)
         res.status(500).json({
             success : false,
             message : error.message
@@ -63,21 +67,23 @@ async function deleteProduct(req, res){
         const {id} = req.body;
         
         if(!id){
+            logger.warn("product not exist")
             return res.status(404).json({
                success : false,
                message : "product not exist"
            })
-       }
+        }
 
-       await product.findByIdAndDelete(id);
+        await product.findByIdAndDelete(id);
 
+        logger.info("product deleted successfully")
         res.status(200).json({
             success : true,
             message : "product deleted successfully"
         })
     }
     catch(error){
-        console.error(error);
+        logger.error(error);
         res.status(500).json({
             success : false,
             message : "Internal server error",
@@ -91,6 +97,7 @@ async function updateProduct(req, res){
         const {id, productName, price} = req.body;
 
         if(!id){
+            logger.warn("product not found")
              return res.status(404).json({
                 success:false,
                 message:"product not found"
@@ -99,6 +106,7 @@ async function updateProduct(req, res){
 
         const data = await product.findByIdAndUpdate({_id : id},{productName : productName, price : price},{new : true});
 
+        logger.info("product updated successfully")
         res.status(200).json({
             success : true,
             data : data,
@@ -106,7 +114,7 @@ async function updateProduct(req, res){
         })
     }
     catch(error){
-        console.error(error)
+        logger.error(error)
         res.status(500).json({
             success : false,
             message : error.message
