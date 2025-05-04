@@ -1,0 +1,450 @@
+[2025-05-03T06:50:59.167Z] INFO: server started
+[2025-05-03T06:51:06.905Z] INFO: server started
+[2025-05-03T06:51:35.455Z] INFO: server started
+[2025-05-03T06:52:57.578Z] INFO: server started
+[2025-05-03T07:03:55.560Z] INFO: server started
+[2025-05-03T07:14:22.687Z] INFO: server started
+[2025-05-03T07:16:18.422Z] INFO: server started
+[2025-05-03T07:28:20.376Z] INFO: server started
+[2025-05-03T07:29:18.618Z] INFO: server started
+[2025-05-03T07:30:05.572Z] INFO: server started
+[2025-05-03T07:30:24.794Z] INFO: server started
+[2025-05-03T07:31:43.347Z] INFO: server started
+[2025-05-03T07:34:26.810Z] INFO: server started
+[2025-05-03T07:34:29.609Z] INFO: Please fill the details
+[2025-05-03T07:34:29.626Z] INFO: Password Incorrect
+[2025-05-03T07:36:40.535Z] INFO: server started
+[2025-05-03T07:36:42.615Z] INFO: Password Incorrect
+[2025-05-03T07:36:56.811Z] INFO: server started
+[2025-05-03T07:36:59.403Z] ERROR: Password Incorrect
+[2025-05-03T07:37:21.357Z] INFO: server started
+[2025-05-03T07:54:14.371Z] INFO: server started
+[2025-05-03T07:55:34.084Z] INFO: server started
+[2025-05-03T07:55:35.455Z] WARN: Password Incorrect
+[2025-05-03T07:55:54.362Z] INFO: server started
+[2025-05-03T07:56:03.904Z] INFO: server started
+[2025-05-03T07:56:07.100Z] WARN: Password Incorrect
+[2025-05-03T08:01:54.535Z] INFO: server started
+[2025-05-03T08:02:41.584Z] INFO: server started
+[2025-05-03T08:04:04.747Z] INFO: server started
+[2025-05-03T08:04:29.232Z] INFO: server started
+[2025-05-03T08:24:00.334Z] INFO: server started
+[2025-05-03T08:24:20.845Z] INFO: server started
+[2025-05-03T08:24:39.725Z] INFO: server started
+[2025-05-03T08:28:48.793Z] INFO: server started
+[2025-05-03T08:33:02.160Z] INFO: server started
+[2025-05-03T08:37:29.347Z] INFO: server started
+[2025-05-03T08:44:38.314Z] INFO: server started
+[2025-05-03T08:45:44.921Z] INFO: server started
+[2025-05-03T08:46:11.747Z] INFO: server started
+[2025-05-03T08:46:23.860Z] INFO: server started
+[2025-05-03T08:47:45.929Z] INFO: server started
+[2025-05-03T08:48:33.580Z] INFO: server started
+[2025-05-03T08:49:23.524Z] INFO: server started
+[2025-05-03T08:49:43.042Z] INFO: server started
+[2025-05-03T08:59:59.033Z] INFO: server started
+[2025-05-03T10:48:31.056Z] INFO: server started
+[2025-05-03T11:01:18.974Z] INFO: product fetched successfully
+[2025-05-03T11:01:18.991Z] INFO: Brands fetched successfuly
+[2025-05-03T11:01:19.007Z] INFO: category fetched successfuly
+[2025-05-03T11:01:23.815Z] WARN: Password Incorrect
+[2025-05-03T11:01:31.779Z] INFO: User login successfully
+[2025-05-03T11:01:31.816Z] INFO: product fetched successfully
+[2025-05-03T11:01:31.822Z] INFO: Brands fetched successfuly
+[2025-05-03T11:01:31.828Z] INFO: category fetched successfuly
+[2025-05-03T11:04:41.143Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:04:53.041Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:05:26.527Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:07:25.715Z] INFO: User login successfully
+[2025-05-03T11:07:25.751Z] INFO: product fetched successfully
+[2025-05-03T11:07:25.757Z] INFO: Brands fetched successfuly
+[2025-05-03T11:07:25.763Z] INFO: category fetched successfuly
+[2025-05-03T11:08:13.109Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:09:29.697Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:09:40.911Z] INFO: User login successfully
+[2025-05-03T11:09:40.945Z] INFO: product fetched successfully
+[2025-05-03T11:09:40.951Z] INFO: Brands fetched successfuly
+[2025-05-03T11:09:40.957Z] INFO: category fetched successfuly
+[2025-05-03T11:09:42.955Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:11:40.098Z] INFO: server started
+[2025-05-03T11:11:49.864Z] INFO: User login successfully
+[2025-05-03T11:11:49.911Z] INFO: product fetched successfully
+[2025-05-03T11:11:49.918Z] INFO: Brands fetched successfuly
+[2025-05-03T11:11:49.923Z] INFO: category fetched successfuly
+[2025-05-03T11:11:51.428Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:14:20.268Z] INFO: server started
+[2025-05-03T11:14:31.076Z] INFO: User login successfully
+[2025-05-03T11:14:31.117Z] INFO: product fetched successfully
+[2025-05-03T11:14:31.124Z] INFO: Brands fetched successfuly
+[2025-05-03T11:14:31.130Z] INFO: category fetched successfuly
+[2025-05-03T11:14:33.431Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:14:58.478Z] INFO: server started
+[2025-05-03T11:15:06.115Z] INFO: User login successfully
+[2025-05-03T11:15:06.157Z] INFO: product fetched successfully
+[2025-05-03T11:15:06.164Z] INFO: Brands fetched successfuly
+[2025-05-03T11:15:06.171Z] INFO: category fetched successfuly
+[2025-05-03T11:15:07.524Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:16:14.101Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:16:15.274Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:16:22.108Z] INFO: User login successfully
+[2025-05-03T11:16:22.141Z] INFO: product fetched successfully
+[2025-05-03T11:16:22.147Z] INFO: Brands fetched successfuly
+[2025-05-03T11:16:22.151Z] INFO: category fetched successfuly
+[2025-05-03T11:16:23.875Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:16:45.261Z] INFO: server started
+[2025-05-03T11:16:52.222Z] INFO: User login successfully
+[2025-05-03T11:16:52.264Z] INFO: product fetched successfully
+[2025-05-03T11:16:52.270Z] INFO: Brands fetched successfuly
+[2025-05-03T11:16:52.275Z] INFO: category fetched successfuly
+[2025-05-03T11:16:53.804Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:96:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:17:27.668Z] INFO: server started
+[2025-05-03T11:17:41.579Z] INFO: User login successfully
+[2025-05-03T11:17:41.623Z] INFO: product fetched successfully
+[2025-05-03T11:17:41.630Z] INFO: Brands fetched successfuly
+[2025-05-03T11:17:41.636Z] INFO: category fetched successfuly
+[2025-05-03T11:17:43.239Z] ERROR: Cannot read properties of undefined (reading 'userId')
+STACK: TypeError: Cannot read properties of undefined (reading 'userId')
+    at getCartItem (C:\Rest api\controllers\cart.js:97:33)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Rest api\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Rest api\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Rest api\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Rest api\node_modules\router\lib\layer.js:152:17)
+    at C:\Rest api\node_modules\router\index.js:295:15
+    at processParams (C:\Rest api\node_modules\router\index.js:582:12)
+    at next (C:\Rest api\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Rest api\node_modules\router\index.js:186:3)
+[2025-05-03T11:18:28.058Z] INFO: server started
+[2025-05-03T11:18:36.386Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:18:49.001Z] INFO: User login successfully
+[2025-05-03T11:18:49.037Z] INFO: product fetched successfully
+[2025-05-03T11:18:49.044Z] INFO: Brands fetched successfuly
+[2025-05-03T11:18:49.049Z] INFO: category fetched successfuly
+[2025-05-03T11:18:50.217Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:23:52.574Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:29:16.395Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:29:30.654Z] INFO: User login successfully
+[2025-05-03T11:29:30.688Z] INFO: product fetched successfully
+[2025-05-03T11:29:30.694Z] INFO: Brands fetched successfuly
+[2025-05-03T11:29:30.698Z] INFO: category fetched successfuly
+[2025-05-03T11:29:32.458Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:37:22.438Z] INFO: User login successfully
+[2025-05-03T11:37:22.468Z] INFO: product fetched successfully
+[2025-05-03T11:37:22.474Z] INFO: Brands fetched successfuly
+[2025-05-03T11:37:22.479Z] INFO: category fetched successfuly
+[2025-05-03T11:37:23.920Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:40:03.811Z] INFO: server started
+[2025-05-03T11:40:17.477Z] INFO: server started
+[2025-05-03T11:42:50.939Z] INFO: User login successfully
+[2025-05-03T11:42:50.979Z] INFO: product fetched successfully
+[2025-05-03T11:42:50.986Z] INFO: Brands fetched successfuly
+[2025-05-03T11:42:50.992Z] INFO: category fetched successfuly
+[2025-05-03T11:42:52.596Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:45:44.896Z] INFO: server started
+[2025-05-03T11:46:52.271Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:46:53.455Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:47:00.634Z] INFO: User login successfully
+[2025-05-03T11:47:00.670Z] INFO: product fetched successfully
+[2025-05-03T11:47:00.676Z] INFO: Brands fetched successfuly
+[2025-05-03T11:47:00.680Z] INFO: category fetched successfuly
+[2025-05-03T11:47:02.430Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:47:08.874Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:47:24.792Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:50:01.599Z] INFO: server started
+[2025-05-03T11:50:10.934Z] WARN: Please provide valid data
+[2025-05-03T11:50:29.653Z] INFO: Item added to the cart
+[2025-05-03T11:50:46.702Z] INFO: Item added to the cart
+[2025-05-03T11:51:03.772Z] INFO: User login successfully
+[2025-05-03T11:51:03.810Z] INFO: product fetched successfully
+[2025-05-03T11:51:03.819Z] INFO: Brands fetched successfuly
+[2025-05-03T11:51:03.825Z] INFO: category fetched successfuly
+[2025-05-03T11:51:05.481Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:51:18.589Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:51:48.463Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:52:39.731Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:52:49.941Z] INFO: User login successfully
+[2025-05-03T11:52:49.974Z] INFO: product fetched successfully
+[2025-05-03T11:52:49.981Z] INFO: Brands fetched successfuly
+[2025-05-03T11:52:49.986Z] INFO: category fetched successfuly
+[2025-05-03T11:52:51.683Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:55:58.128Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:56:08.533Z] INFO: User login successfully
+[2025-05-03T11:56:08.564Z] INFO: product fetched successfully
+[2025-05-03T11:56:08.569Z] INFO: Brands fetched successfuly
+[2025-05-03T11:56:08.574Z] INFO: category fetched successfuly
+[2025-05-03T11:56:10.413Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:57:05.710Z] INFO: User login successfully
+[2025-05-03T11:57:05.743Z] INFO: product fetched successfully
+[2025-05-03T11:57:05.749Z] INFO: Brands fetched successfuly
+[2025-05-03T11:57:05.753Z] INFO: category fetched successfuly
+[2025-05-03T11:57:07.339Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:57:32.381Z] INFO: Item added to the cart
+[2025-05-03T11:57:42.182Z] INFO: User login successfully
+[2025-05-03T11:57:42.217Z] INFO: product fetched successfully
+[2025-05-03T11:57:42.223Z] INFO: Brands fetched successfuly
+[2025-05-03T11:57:42.229Z] INFO: category fetched successfuly
+[2025-05-03T11:57:44.747Z] INFO: Cart Item fetched succefully
+[2025-05-03T11:57:59.196Z] INFO: Item added to the cart
+[2025-05-03T11:58:06.820Z] INFO: User login successfully
+[2025-05-03T11:58:06.855Z] INFO: product fetched successfully
+[2025-05-03T11:58:06.862Z] INFO: Brands fetched successfuly
+[2025-05-03T11:58:06.867Z] INFO: category fetched successfuly
+[2025-05-03T11:58:09.430Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:07:22.012Z] INFO: server started
+[2025-05-03T12:12:12.185Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:12:32.636Z] INFO: product fetched successfully
+[2025-05-03T12:12:32.645Z] INFO: Brands fetched successfuly
+[2025-05-03T12:12:32.651Z] INFO: category fetched successfuly
+[2025-05-03T12:12:34.406Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:12:49.734Z] INFO: product fetched successfully
+[2025-05-03T12:12:49.740Z] INFO: Brands fetched successfuly
+[2025-05-03T12:12:49.745Z] INFO: category fetched successfuly
+[2025-05-03T12:14:06.910Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:17:45.294Z] INFO: product fetched successfully
+[2025-05-03T12:17:45.301Z] INFO: Brands fetched successfuly
+[2025-05-03T12:17:45.307Z] INFO: category fetched successfuly
+[2025-05-03T12:17:47.905Z] INFO: product fetched successfully
+[2025-05-03T12:17:47.910Z] INFO: Brands fetched successfuly
+[2025-05-03T12:17:47.915Z] INFO: category fetched successfuly
+[2025-05-03T12:18:08.241Z] INFO: product fetched successfully
+[2025-05-03T12:18:08.246Z] INFO: Brands fetched successfuly
+[2025-05-03T12:18:08.251Z] INFO: category fetched successfuly
+[2025-05-03T12:18:15.727Z] WARN: Password Incorrect
+[2025-05-03T12:18:21.648Z] WARN: Password Incorrect
+[2025-05-03T12:18:25.344Z] WARN: Password Incorrect
+[2025-05-03T12:18:30.567Z] INFO: User login successfully
+[2025-05-03T12:18:30.592Z] INFO: product fetched successfully
+[2025-05-03T12:18:30.601Z] INFO: Brands fetched successfuly
+[2025-05-03T12:18:30.607Z] INFO: category fetched successfuly
+[2025-05-03T12:18:32.784Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:18:52.024Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:20:26.840Z] INFO: product fetched successfully
+[2025-05-03T12:20:26.848Z] INFO: Brands fetched successfuly
+[2025-05-03T12:20:26.852Z] INFO: category fetched successfuly
+[2025-05-03T12:20:30.100Z] INFO: product fetched successfully
+[2025-05-03T12:20:30.105Z] INFO: Brands fetched successfuly
+[2025-05-03T12:20:30.110Z] INFO: category fetched successfuly
+[2025-05-03T12:20:35.317Z] WARN: Password Incorrect
+[2025-05-03T12:20:46.862Z] INFO: User login successfully
+[2025-05-03T12:20:46.881Z] INFO: product fetched successfully
+[2025-05-03T12:20:46.891Z] INFO: Brands fetched successfuly
+[2025-05-03T12:20:46.897Z] INFO: category fetched successfuly
+[2025-05-03T12:20:50.896Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:21:55.805Z] INFO: product fetched successfully
+[2025-05-03T12:21:55.811Z] INFO: Brands fetched successfuly
+[2025-05-03T12:21:55.816Z] INFO: category fetched successfuly
+[2025-05-03T12:22:01.196Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:22:06.313Z] INFO: product fetched successfully
+[2025-05-03T12:22:06.319Z] INFO: Brands fetched successfuly
+[2025-05-03T12:22:06.323Z] INFO: category fetched successfuly
+[2025-05-03T12:22:28.713Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:22:58.329Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:23:13.869Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:23:19.015Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:23:42.123Z] INFO: product fetched successfully
+[2025-05-03T12:23:42.130Z] INFO: Brands fetched successfuly
+[2025-05-03T12:23:42.134Z] INFO: category fetched successfuly
+[2025-05-03T12:23:44.844Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:24:30.486Z] INFO: product fetched successfully
+[2025-05-03T12:24:30.490Z] INFO: Brands fetched successfuly
+[2025-05-03T12:24:30.495Z] INFO: category fetched successfuly
+[2025-05-03T12:24:36.966Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:24:58.865Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:28:08.642Z] INFO: product fetched successfully
+[2025-05-03T12:28:08.646Z] INFO: Brands fetched successfuly
+[2025-05-03T12:28:08.652Z] INFO: category fetched successfuly
+[2025-05-03T12:29:06.619Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:29:32.610Z] INFO: product fetched successfully
+[2025-05-03T12:29:32.616Z] INFO: Brands fetched successfuly
+[2025-05-03T12:29:32.621Z] INFO: category fetched successfuly
+[2025-05-03T12:29:49.889Z] INFO: Cart Item fetched succefully
+[2025-05-03T12:32:20.017Z] INFO: product fetched successfully
+[2025-05-03T12:32:20.025Z] INFO: Brands fetched successfuly
+[2025-05-03T12:32:20.031Z] INFO: category fetched successfuly
+[2025-05-03T12:54:35.657Z] INFO: product fetched successfully
+[2025-05-03T12:54:35.664Z] INFO: Brands fetched successfuly
+[2025-05-03T12:54:35.668Z] INFO: category fetched successfuly
+[2025-05-03T12:55:46.303Z] INFO: product fetched successfully
+[2025-05-03T12:55:46.309Z] INFO: Brands fetched successfuly
+[2025-05-03T12:55:46.314Z] INFO: category fetched successfuly
+[2025-05-03T14:01:55.983Z] INFO: server started
+[2025-05-03T14:01:56.431Z] INFO: product fetched successfully
+[2025-05-03T14:01:56.448Z] INFO: Brands fetched successfuly
+[2025-05-03T14:01:56.472Z] INFO: category fetched successfuly
+[2025-05-03T14:03:41.152Z] INFO: product fetched successfully
+[2025-05-03T14:03:41.168Z] INFO: Brands fetched successfuly
+[2025-05-03T14:03:41.181Z] INFO: category fetched successfuly
+[2025-05-03T14:03:44.287Z] INFO: product fetched successfully
+[2025-05-03T14:03:44.296Z] INFO: Brands fetched successfuly
+[2025-05-03T14:03:44.308Z] INFO: category fetched successfuly
+[2025-05-03T14:03:47.745Z] INFO: product fetched successfully
+[2025-05-03T14:03:47.757Z] INFO: Brands fetched successfuly
+[2025-05-03T14:03:47.768Z] INFO: category fetched successfuly
+[2025-05-03T14:09:29.965Z] INFO: product fetched successfully
+[2025-05-03T14:09:29.977Z] INFO: Brands fetched successfuly
+[2025-05-03T14:09:29.986Z] INFO: category fetched successfuly
+[2025-05-03T14:16:48.811Z] INFO: product fetched successfully
+[2025-05-03T14:16:48.826Z] INFO: Brands fetched successfuly
+[2025-05-03T14:16:48.835Z] INFO: category fetched successfuly
+[2025-05-03T14:20:11.272Z] INFO: product fetched successfully
+[2025-05-03T14:20:11.299Z] INFO: Brands fetched successfuly
+[2025-05-03T14:20:11.308Z] INFO: category fetched successfuly
+[2025-05-03T14:20:15.726Z] INFO: product fetched successfully
+[2025-05-03T14:20:15.738Z] INFO: Brands fetched successfuly
+[2025-05-03T14:20:15.747Z] INFO: category fetched successfuly
+[2025-05-03T14:20:21.397Z] INFO: product fetched successfully
+[2025-05-03T14:20:21.409Z] INFO: Brands fetched successfuly
+[2025-05-03T14:20:21.420Z] INFO: category fetched successfuly
+[2025-05-03T14:32:15.561Z] INFO: product fetched successfully
+[2025-05-03T14:32:15.569Z] INFO: Brands fetched successfuly
+[2025-05-03T14:32:15.578Z] INFO: category fetched successfuly
+[2025-05-03T14:37:55.640Z] INFO: product fetched successfully
+[2025-05-03T14:37:55.652Z] INFO: Brands fetched successfuly
+[2025-05-03T14:37:55.661Z] INFO: category fetched successfuly
+[2025-05-03T14:41:04.495Z] INFO: product fetched successfully
+[2025-05-03T14:41:04.506Z] INFO: Brands fetched successfuly
+[2025-05-03T14:41:04.516Z] INFO: category fetched successfuly
+[2025-05-03T14:45:02.592Z] INFO: server started
