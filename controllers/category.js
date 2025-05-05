@@ -3,6 +3,8 @@ const category = require("../models/category");
 
 async function createCategory(req,res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const categoryName = req.body.categoryName;
         const data = await category.create({categoryName});
 
@@ -47,6 +49,8 @@ async function getCategory(req,res){
 
 async function deleteCategory(req,res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const categoryId = req.body.categoryId;
         await category.findByIdAndDelete(categoryId);
 
