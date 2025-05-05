@@ -3,6 +3,8 @@ const brand = require("../models/brands");
 
 async function createBrand(req,res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const brandName = req.body.brandName;
         const data = await brand.create({brandName});
 
@@ -54,6 +56,8 @@ async function getBrands(req,res){
 
 async function deleteBrand(req,res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const brandId = req.body.brandId;
         await brand.findByIdAndDelete(brandId);
 
