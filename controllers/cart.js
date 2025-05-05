@@ -5,6 +5,8 @@ const user = require("../models/user");
 
 async function addProductToCart(req, res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const {UserId, productId} = req.body;
 
         if(!UserId || !productId){
@@ -64,6 +66,8 @@ async function addProductToCart(req, res){
 
 async function deleteProductFromCart(req, res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const {productId, UserId} = req.body;
 
         const data = await Cart.findOneAndUpdate(
@@ -93,6 +97,8 @@ async function deleteProductFromCart(req, res){
 
 async function getCartItem(req,res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+        
         const userId = req.body.userId;
         const data = await Cart.find({UserId : userId}).populate("ProductId").exec()
 
