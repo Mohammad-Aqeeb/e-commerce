@@ -3,6 +3,8 @@ const User = require("../models/user");
 
 async function createUser(req, res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+        
         const {userName, email, password} = req.body;
 
         if(!userName || !email || !password){
@@ -76,6 +78,8 @@ async function getUsers(req, res){
 
 async function deleteUser(req, res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+        
         const id = req.body.userId;
 
         if(!id){
@@ -107,6 +111,8 @@ async function deleteUser(req, res){
 
 async function loginUser(req, res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const {email, password} = req.body;
 
         if(!email && !password){
