@@ -4,6 +4,8 @@ const cloudinary = require("cloudinary")
 
 async function createProduct(req, res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const {productName, price, description, category, brand} = req.body;
         const image = req.files.image;
 
@@ -62,8 +64,43 @@ async function getProduct(req, res){
     }
 }
 
+async function getProductById(req, res){
+    try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
+        const productId = req.body.productId;
+
+        if(!productId){
+            logger.warn("Product not found")
+            res.status(500).json({
+                success : false,
+                message : "Product not found"
+            })
+        }
+
+        const data = await product.find({_id : productId}).populate(["brand","category"]).exec();
+
+        logger.info("Product fetched successfuly")
+        res.status(200).json({
+            success : true,
+            data : data,
+            message : "Product fetched successfuly"
+        })
+    }
+    catch(error){
+        logger.error(error);
+        res.status(500).json({
+            success : false,
+            message : "Internal server error",
+            error : error.message
+        })
+    }
+}
+
 async function deleteProduct(req, res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const {id} = req.body;
         
         if(!id){
@@ -94,6 +131,8 @@ async function deleteProduct(req, res){
 
 async function updateProduct(req, res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const {id, productName, price} = req.body;
 
         if(!id){
@@ -122,9 +161,11 @@ async function updateProduct(req, res){
     }
 }
 
+
 module.exports = {
     createProduct,
     getProduct,
     deleteProduct,
     updateProduct,
+    getProductById
 };
