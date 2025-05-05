@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { createProduct, getProduct, deleteProduct, updateProduct,} = require("../controllers/Product");
+const { createProduct, getProduct, deleteProduct, updateProduct, getProductById,} = require("../controllers/Product");
 const { createBrand, getBrands, deleteBrand } = require("../controllers/brand");
 const { createCategory, getCategory, deleteCategory } = require("../controllers/category");
 const { createUser, getUsers, deleteUser, loginUser } = require("../controllers/user");
@@ -12,6 +12,10 @@ router.post("/createProduct", createProduct);
 router.get("/getProduct", getProduct);
 router.delete("/deleteProduct", deleteProduct);
 router.put("/updateProduct", updateProduct);
+router.post("/getProductById", getProductById);
+router.post("/getProductByBrand", getProductByBrand);
+router.post("/getProductByCategory", getProductByCategory);
+
 
 router.post("/createBrand", createBrand);
 router.get("/getBrands", getBrands);
