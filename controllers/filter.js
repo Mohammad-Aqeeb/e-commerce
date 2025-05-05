@@ -3,6 +3,8 @@ const product = require("../models/product");
 
 async function getProductByBrand(req, res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+
         const brandId = req.body.brandId;
 
         if(!brandId){
@@ -35,6 +37,8 @@ async function getProductByBrand(req, res){
 
 async function getProductByCategory(req, res){
     try{
+        logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+        
         const categoryId = req.body.categoryId;
 
         if(!categoryId){
@@ -67,7 +71,8 @@ async function getProductByCategory(req, res){
 
 async function getFilterProduct(req, res){
         try{
-
+            logger.debug(`⚪ Request Body: ${JSON.stringify(req.body)}`);
+            
             const filterData = req.body.filterData;
             const brandId = filterData.brandId;
             const categoryId = filterData.categoryId;
